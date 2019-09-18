@@ -1,0 +1,17 @@
+.upload__doc__container {
+	text-align: center;
+	font-size: $text-font-size;
+	height: 50px;
+	// width: 400px;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	border: 1px;
+	border-radius: 4px;
+}
+
+.upload__doc {
+	position: relative;
+}

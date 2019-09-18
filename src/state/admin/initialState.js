@@ -1,0 +1,303 @@
+// @flow
+
+type StateT = {
+	auditActions: {
+		data: Object,
+		inProgress: boolean,
+		errors: string,
+	},
+	campaignActions: {
+		data: {
+			content: Array<Object>,
+			first: boolean,
+			last: boolean,
+			number: number,
+			numberOfElements: number,
+			pageable: {
+				offset: number,
+				pageNumber: number,
+				pageSize: number,
+				paged: boolean,
+				sort: {
+					sorted: boolean,
+					unsorted: boolean,
+				},
+				unpaged: boolean,
+			},
+		},
+		inProgress: boolean,
+		errors: string,
+	},
+	fundrisingApplications: {
+		data: {
+			content: Array<Object>,
+			first: boolean,
+			last: boolean,
+			number: number,
+			numberOfElements: number,
+			pageable: {
+				offset: number,
+				pageNumber: number,
+				pageSize: number,
+				paged: boolean,
+				sort: {
+					sorted: boolean,
+					unsorted: boolean,
+				},
+				unpaged: boolean,
+			},
+		},
+		inProgress: boolean,
+		errors: string,
+	},
+	fundrisingApplicationsDocuments: {
+		data: Array<Object>,
+		inProgress: boolean,
+		errors: string,
+	},
+	fundrisingAppDocumentDownload: {
+		fileDto: {
+			type: string,
+			file: string,
+		},
+		inProgress: boolean,
+	},
+	userKYC: {
+		data: {
+			auditorId: number,
+			companyId: number,
+			companyName: string,
+			firstName: string,
+			lastName: string,
+			rejectionReason: string,
+			requestState: string,
+			userId: number,
+			userName: string,
+			userRole: string,
+			politicalyExposed: boolean,
+			userDocuments: Array<Object>,
+		},
+		inProgress: boolean,
+		files: Array<Object>,
+		errors: string,
+	},
+	launchCampaign: {
+		data: {
+			auditId: number,
+			auditorId: number,
+			collectedAmount: number,
+			companyId: number,
+			companyLogoUrl: string,
+			fundedPercentage: number,
+			fundingGoals: number,
+			location: string,
+			marketImageUrl: string,
+			maxEquityOffered: number,
+			minEquityOffered: number,
+			minInvestment: number,
+			name: string,
+			pricePerShare: number,
+			state: string,
+			tag: string,
+			tagLine: string,
+			timeLeft: number,
+			timeToRaiseFunds: number,
+			topicStatus: {
+				additionalProp1: boolean,
+				additionalProp2: boolean,
+				additionalProp3: boolean,
+			},
+			urlFriendlyName: string,
+		},
+		inProgress: boolean,
+		errors: string,
+	},
+	auditKYC: {
+		data: {
+			auditorId: number,
+			userKYCId: number,
+		},
+	},
+	KYCRequest: {
+		data: {
+			content: Array<Object>,
+			first: boolean,
+			last: boolean,
+			number: number,
+			numberOfElements: number,
+			pageable: {
+				offset: number,
+				pageNumber: number,
+				pageSize: number,
+				paged: boolean,
+				sort: {
+					sorted: boolean,
+					unsorted: boolean,
+				},
+				unpaged: boolean,
+			},
+			size: number,
+			sort: {
+				sorted: boolean,
+				unsorted: boolean,
+			},
+			totalElements: number,
+			totalPages: number,
+		},
+		inProgress: boolean,
+		errors: string,
+	},
+};
+
+const initialState = (): StateT => ({
+	auditActions: {
+		data: null,
+		inProgress: false,
+		errors: '',
+	},
+	campaignActions: {
+		data: {
+			content: [],
+			first: true,
+			last: true,
+			number: 0,
+			numberOfElements: 0,
+			pageable: {
+				offset: 0,
+				pageNumber: 0,
+				pageSize: 0,
+				paged: true,
+				sort: {
+					sorted: true,
+					unsorted: true,
+				},
+				unpaged: true,
+			},
+		},
+		inProgress: false,
+		errors: '',
+	},
+	fundrisingApplications: {
+		data: {
+			content: [],
+			first: true,
+			last: true,
+			number: 0,
+			numberOfElements: 0,
+			pageable: {
+				offset: 0,
+				pageNumber: 0,
+				pageSize: 0,
+				paged: true,
+				sort: {
+					sorted: true,
+					unsorted: true,
+				},
+				unpaged: true,
+			},
+		},
+		inProgress: false,
+		errors: '',
+	},
+	fundrisingApplicationsDocuments: {
+		data: [],
+		inProgress: false,
+		errors: '',
+	},
+	fundrisingAppDocumentDownload: {
+		fileDto: {
+			type: '',
+			file: '',
+		},
+		inProgress: false,
+	},
+	userKYC: {
+		data: {
+			auditorId: 0,
+			companyId: 0,
+			companyName: '',
+			firstName: '',
+			lastName: '',
+			rejectionReason: '',
+			requestState: '',
+			userId: 0,
+			userName: '',
+			userRole: '',
+			politicalyExposed: false,
+			userDocuments: [],
+		},
+		files: [],
+		inProgress: false,
+		errors: '',
+	},
+
+	launchCampaign: {
+		data: {
+			auditId: 0,
+			auditorId: 0,
+			collectedAmount: 0,
+			companyId: 0,
+			companyLogoUrl: '',
+			fundedPercentage: 0,
+			fundingGoals: 0,
+			location: '',
+			marketImageUrl: '',
+			maxEquityOffered: 0,
+			minEquityOffered: 0,
+			minInvestment: 0,
+			name: '',
+			pricePerShare: 0,
+			state: '',
+			tag: '',
+			tagLine: '',
+			timeLeft: 0,
+			timeToRaiseFunds: 0,
+			topicStatus: {
+				additionalProp1: false,
+				additionalProp2: false,
+				additionalProp3: false,
+			},
+			urlFriendlyName: '',
+		},
+		inProgress: false,
+		errors: '',
+	},
+
+	auditKYC: {
+		data: {
+			auditorId: 0,
+			userKYCId: 0,
+		},
+	},
+	KYCRequest: {
+		data: {
+			content: [],
+			first: true,
+			last: true,
+			number: 0,
+			numberOfElements: 0,
+			pageable: {
+				offset: 0,
+				pageNumber: 0,
+				pageSize: 0,
+				paged: true,
+				sort: {
+					sorted: true,
+					unsorted: true,
+				},
+				unpaged: true,
+			},
+			size: 0,
+			sort: {
+				sorted: true,
+				unsorted: true,
+			},
+			totalElements: 0,
+			totalPages: 0,
+		},
+		inProgress: false,
+		errors: '',
+	},
+});
+
+export default initialState;

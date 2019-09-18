@@ -1,0 +1,18 @@
+.pagination {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.pageNumber {
+	padding: 5px 10px;
+	color: $dark-blue;
+	cursor: pointer;
+	font-size: 14px;
+
+	&:hover {
+		background-color: $gray2;
+		color: $dark-blue;
+		border-radius: 4px;
+	}
+}

@@ -1,0 +1,70 @@
+.subtitle {
+	font-size: 16px !important;
+	margin-bottom: 100px;
+}
+
+.app_form {
+	margin: 0px auto 0 auto;
+	text-align: center;
+	color: $light-blue !important;
+
+	&_doc {
+		margin-top: 50px;
+		> div {
+			&:first-child {
+				margin-bottom: 10px;
+			}
+			//border: 1px dashed $light-purple;
+			//border-radius: 1px;
+			//color: $light-blue;
+			height: 50px;
+			width: 400px;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			font-weight: 600;
+			cursor: pointer;
+		}
+	}
+	&_checkbox {
+		width: 560px;
+		margin: 40px auto;
+		background-color: $light-yellow;
+		padding: 20px;
+		border-radius: 4px;
+	}
+
+	&_buttons {
+		display: flex;
+		justify-content: space-evenly;
+		width: 400px;
+		margin: 50px auto 0 auto;
+	}
+
+	&_submitted_doc {
+		color: $dark-blue;
+		font-size: 20px;
+		font-weight: 600;
+		width: 400px;
+		margin: 40px auto 50px auto;
+		text-align: left;
+		> span {
+			padding-left: 2px;
+		}
+		> div {
+			cursor: pointer;
+		}
+		&_doc_title {
+			font-size: 14px;
+			color: $light-blue;
+			font-weight: 600;
+		}
+	}
+}
+
+.app_review {
+	&_title {
+		padding-top: 50px !important;
+	}
+}

@@ -1,0 +1,126 @@
+.start__registration {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: fit-content;
+	height: fit-content;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	color: $dark-blue;
+
+	&--heading {
+		font-size: 30px;
+		font-weight: 600;
+	}
+
+	&--subheading {
+		font-size: 14px;
+		margin: 20px 0 40px 0;
+	}
+}
+
+.step {
+	font-size: 12px;
+	margin-bottom: 12px;
+}
+
+.company-registration-form {
+	margin-top: 120px;
+
+	.form-text {
+		color: $dark-blue;
+		width: 40%;
+	}
+}
+
+.about__company__info {
+	text-align: center;
+	margin-bottom: 40px;
+	span {
+		color: $dark-blue;
+		font-size: 20px;
+	}
+	pre {
+		margin: 13px auto 0 auto;
+		color: $light-purple;
+		font-family: 'Open Sans', sans-serif;
+		font-size: $text-font-size;
+	}
+}
+
+.panels {
+	margin: 60px 0px 150px 0px;
+}
+
+.panel__title {
+	color: $dark-blue;
+}
+
+.company__wizard-title {
+	text-align: center;
+	font-size: 20px;
+	color: $dark-blue;
+	margin: 20px auto;
+}
+
+.company__wizard-text {
+	text-align: center;
+	color: $light-purple;
+	margin-bottom: 35px;
+}
+
+.upload__photo__container {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	border: 1px dashed $light-purple;
+	outline: none;
+}
+
+.company__wizard-images {
+	position: relative;
+
+	.company__wizard-logo {
+		position: absolute;
+		bottom: -150px;
+		left: 20px;
+		z-index: 1;
+	}
+}
+
+.buttons {
+	margin: 0px 100px !important;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	font-size: $button-font-size;
+
+	> span {
+		color: $light-purple;
+		cursor: pointer;
+		&:hover {
+			color: $dark-blue;
+		}
+	}
+
+	.successScreen & {
+		margin-top: 40px !important;
+		position: relative;
+		justify-content: center;
+		> span {
+			color: $light-blue;
+			margin-right: 20px;
+		}
+	}
+}

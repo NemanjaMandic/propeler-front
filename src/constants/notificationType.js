@@ -1,0 +1,11 @@
+// @flow
+export const ACCEPT_CAMPAIGN = 'ACCEPT_CAMPAIGN';
+export const REJECT_CAMPAIGN = 'REJECT_CAMPAIGN';
+export const KYC_APPROVAL = 'KYC_APPROVAL';
+export const KYC_REJECTION = 'KYC_REJECTION';
+export const ACCEPT_INVESTOR = 'ACCEPT_INVESTOR';
+export const REJECT_INVESTOR = 'REJECT_INVESTOR';
+export const ACCEPT_DOCUMENTS = 'ACCEPT_DOCUMENTS';
+export const REJECT_DOCUMENTS = 'REJECT_DOCUMENTS';
+
+export const requestDocumentStatus = new Map([[ACCEPT_DOCUMENTS, 'APPROVED'], [REJECT_DOCUMENTS, 'DECLINED']]);

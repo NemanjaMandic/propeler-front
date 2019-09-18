@@ -1,0 +1,43 @@
+$white: #ffffff;
+$dark-blue: #39316c;
+$light-blue: #3dc6fa;
+$light-purple: #9498b8;
+$green: #8dd070;
+$background-green: #d3ffe9;
+$magnolia: #f8f2ff;
+$light-green: #1ccd77;
+$orange: #ffa000;
+$red: #f83a5c;
+$light-gray: #f8f8f8;
+$gray: #e5e5e6;
+$gray1: #d0d1da;
+$gray2: #f4f4f4;
+$gray3: #acb6bf;
+$gray4: #f1f1f1;
+$gray5: #d9d9d9;
+$blue: #e5f8ff;
+$light-yellow: #fff7e0;
+$light-red: #fa3877;
+
+:export {
+	white: $white;
+	darkPurple: $dark-blue;
+	lightBlue: $light-blue;
+	lightPurple: $light-purple;
+	green: $green;
+	backgroundGreen: $background-green;
+	magnolia: $magnolia;
+	lightGreen: $light-green;
+	orange: $orange;
+	red: $red;
+	lightGray: $light-gray;
+	gray: $gray;
+	gray1: $gray1;
+	gray2: $gray2;
+	gray3: $gray3;
+	gray4: $gray4;
+	gray5: $gray5;
+	blue: $blue;
+	lightYellow: $light-yellow;
+	lightRed: $light-red;
+}

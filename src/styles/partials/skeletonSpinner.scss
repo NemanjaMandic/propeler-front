@@ -1,0 +1,13 @@
+.skeleton-spinner {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	.skeleton-spinner__title {
+		margin-bottom: 40px;
+		margin-top: 80px;
+	}
+	.skeleton-spinner__content {
+		align-self: center;
+		width: 400px;
+	}
+}

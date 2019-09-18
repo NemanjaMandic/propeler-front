@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="768" height="432" viewBox="0 0 768 432">
+  <defs>
+    <clipPath id="clip-_768x432_-_campaign_cover">
+      <rect width="768" height="432"/>
+    </clipPath>
+  </defs>
+  <g id="_768x432_-_campaign_cover" data-name="768x432 - campaign cover" clip-path="url(#clip-_768x432_-_campaign_cover)">
+    <rect width="768" height="432" fill="#fff"/>
+    <rect id="bg" width="768" height="432" transform="translate(0.5)" fill="#f4f4f4"/>
+    <g id="Group_9901" data-name="Group 9901" transform="translate(293 125.5)">
+      <g id="Group_9900" data-name="Group 9900">
+        <path id="Path_5365" data-name="Path 5365" d="M-20675-19987.859v-7.8l13.035-13.035,6.576,6.576,20.717-20.717,16.7,16.7v18.271Z" transform="translate(20737 20099)" fill="#d9d9d9"/>
+        <circle id="Ellipse_1019" data-name="Ellipse 1019" cx="8" cy="8" r="8" transform="translate(62 69)" fill="#d9d9d9"/>
+      </g>
+      <rect id="Rectangle_2841" data-name="Rectangle 2841" width="72" height="56" rx="4" transform="translate(55 62.5)" fill="none" stroke="#d9d9d9" stroke-linecap="round" stroke-width="6"/>
+    </g>
+  </g>
+</svg>

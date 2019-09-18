@@ -1,0 +1,47 @@
+@import '~bootstrap/scss/bootstrap';
+
+// Modules
+@import './modules/colors';
+@import './modules/fonts';
+@import './modules/margins';
+
+// Partials
+@import './partials/app';
+@import './partials/header';
+@import './partials/menu';
+@import './partials/login';
+@import './partials/profile-menu';
+@import './partials/profile';
+@import './partials/successScreens';
+@import './partials/register';
+@import './partials/skeletonSpinner';
+@import './partials/2fa';
+@import './partials/company';
+@import './partials/campaign';
+@import './partials/overview';
+@import './partials/investor';
+@import './partials/interest';
+@import './partials/opportunities';
+@import './partials/dashboard';
+@import './partials/app_form';
+@import './partials/admin';
+@import './partials/inbox';
+@import './partials/about';
+@import './partials/footer';
+@import './partials/signature';
+@import './partials/landingPage';
+
+// Commons
+@import './common/button';
+@import './common/input';
+@import './common/errorPages';
+@import './common/uploadPhoto';
+@import './common/sideNavigation';
+@import './common/editor';
+@import './common/uploadDocument';
+@import './partials/invest-dialog';
+@import './common/pagination';
+
+button {
+	outline: 0 !important;
+}

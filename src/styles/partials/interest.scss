@@ -1,0 +1,39 @@
+.interest {
+	&-form {
+		h1 {
+			color: #39316c;
+			font-size: 30px;
+			font-weight: 600;
+			margin: 30px auto;
+		}
+		p {
+			color: #39316c;
+			font-weight: 400;
+		}
+		a {
+			color: #3dc6fa;
+		}
+
+		form {
+			margin-top: 40px;
+		}
+
+		margin: 60px auto 0 auto;
+		max-width: 600px;
+		text-align: center;
+
+		&--warning {
+			max-width: 400px;
+			border-radius: 4px;
+			background-color: #fff7e0;
+			margin: 0 auto 40px auto;
+			padding: 20px;
+			text-align: left;
+
+			p {
+				color: #39316c;
+				font-weight: 400;
+			}
+		}
+	}
+}

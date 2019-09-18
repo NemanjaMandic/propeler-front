@@ -1,0 +1,30 @@
+.rm-input {
+	&__default {
+		width: 100% !important;
+		max-width: 400px !important;
+	}
+
+	&__medium {
+		width: 280px !important;
+	}
+
+	&__small {
+		width: 190px !important;
+	}
+
+	&__large {
+		width: 100% !important;
+	}
+
+	button {
+		outline: none;
+		padding: 5px;
+		svg {
+			width: 18px;
+			height: 18px;
+		}
+	}
+}
+.first_letter {
+	color: $dark-blue;
+}

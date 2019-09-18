@@ -1,0 +1,15 @@
+export const details = [
+	"Let the audience know details about your campaign, funding goals,\n about time you plan to raise funds as well as how much equity you're willing to give.",
+	'Creating a brand identity is a crucial first step in marketing your campaign.\n Uploaded images should be Max. file size: 4MB. Accepted formats: JPG, PNG',
+	'Unlock the investors golden treasure just in a few seconds.\n Convince audience that your campaign is a perfect match for everyone.',
+	'Inform investors of the problem your start up purports to solve.',
+	'Inform investors, prospective and current, of the problem your start up purports to \n solve.',
+	'Inform Investors of who your customers might be and to demonstrate that there \n is enough of such to make a profitable company.',
+	'Inform investors of how your start up purports to sell something \n people are already buying or at least interested in.',
+	'Notify audience about project updates',
+	'Inform investors of who founded the company, who works for it, and what the team’s \n core competencies are.',
+	'Add investors to your portfolio.',
+	'Inform investors of who you compete with and what your competitive advantage over \n them are.',
+	'Inform investors of funds you have already raised as well as about exit strategies and \n how you expect those will reward holders of your equity.',
+	'Submit supporting documents that verify your business.',
+];

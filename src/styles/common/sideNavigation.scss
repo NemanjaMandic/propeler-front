@@ -1,0 +1,46 @@
+.navigation_container {
+	margin: 40px 0 0;
+	border-radius: 4px;
+	overflow: hidden;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
+	display: inline-block;
+	width: 260px;
+	float: right;
+}
+
+.tab {
+	position: relative;
+	padding: 15px 20px;
+	font-size: 14px;
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+
+	svg {
+		color: $light-green;
+	}
+
+	&.disabled {
+		background-color: $light-gray;
+		border: 1px solid #f4f4f4;
+	}
+
+	&:hover {
+		background-color: $light-gray;
+	}
+
+	.active {
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		border-left: 4px solid $dark-blue;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+}
+
+.in_progress {
+	height: 20px !important;
+	width: 20px !important;
+}

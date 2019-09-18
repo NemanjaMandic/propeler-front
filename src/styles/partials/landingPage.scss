@@ -1,0 +1,364 @@
+.landing_page {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: $dark-blue;
+}
+
+//first section
+.first_section {
+	display: flex;
+	flex-direction: column;
+	//justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 90px;
+
+	&_title {
+		font-size: 50px;
+		font-weight: 600;
+		text-align: center;
+		margin-bottom: 25px;
+	}
+
+	&_large_text {
+		white-space: pre;
+		text-align: center;
+		margin-bottom: 20px !important;
+		font-size: 18px;
+	}
+
+	&_button {
+		height: 60px !important;
+		width: 200px !important;
+		font-weight: 600 !important;
+		margin-bottom: 20px !important;
+	}
+
+	&_subtitle {
+		font-size: 30px;
+		font-weight: 600;
+		white-space: pre;
+		text-align: center;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+
+	&_medium_text {
+		@extend .first_section_large_text;
+		font-size: 16px;
+	}
+}
+
+//second section
+.second_section {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 50px;
+	//position: absolute;
+	//top: 1400px;
+	//background-image: linear-gradient(#F4F4F5,#FFFFFF);
+	//min-height: 800px;
+}
+
+.start_investing {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	min-height: 480px;
+
+	&_text {
+		margin-top: 60px;
+		font-weight: 600;
+		position: relative;
+		width: 100%;
+		padding-left: 100px;
+	}
+
+	&_title {
+		font-weight: 600;
+		font-size: 30px;
+		text-align: left;
+		margin-bottom: 20px;
+	}
+
+	&_subtitle {
+		font-weight: 600;
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+
+	&_image {
+		background-repeat: no-repeat;
+		background-position: bottom 0px right 0px;
+		background-size: auto;
+		width: 100%;
+	}
+}
+
+.raise_funds {
+	@extend .start_investing;
+
+	&_image {
+		background-repeat: no-repeat;
+		background-position: bottom 0px left 0px;
+		background-size: auto;
+		width: 100%;
+	}
+
+	&_text {
+		@extend .start_investing_text;
+	}
+
+	&_title {
+		@extend .start_investing_title;
+	}
+
+	&_subtitle {
+		@extend .start_investing_subtitle;
+	}
+}
+
+//third section
+.third_section {
+	@extend .first_section;
+
+	> div {
+		&:first-child {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			width: 100%;
+			align-items: center;
+			margin-bottom: 40px;
+
+			> span {
+				&:first-child {
+					font-weight: 600;
+					font-size: 30px;
+					margin-bottom: 20px;
+				}
+
+				&:nth-child(2) {
+					font-size: 16px;
+					white-space: pre-wrap;
+					text-align: center;
+				}
+			}
+		}
+
+		&:nth-child(2) {
+			display: flex;
+			justify-content: space-between;
+
+			> div {
+				width: 33.33%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				> p {
+					padding: 0 60px;
+					text-align: center;
+					font-size: 16px;
+					white-space: pre-wrap;
+					> a {
+						&:hover,
+						:focus,
+						:active {
+							color: $light-blue !important;
+							text-decoration: none !important;
+						}
+					}
+				}
+
+				&:nth-child(2) {
+					margin: 0 10px;
+				}
+			}
+		}
+	}
+}
+
+.we_care_card_title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	> span {
+		font-size: 20px;
+		font-weight: 600;
+		margin: 20px 0px;
+	}
+}
+
+//fourth section
+.fourth_section {
+	@extend .first_section;
+	margin-top: 70px;
+	margin-bottom: 130px;
+
+	> span {
+		font-weight: 600;
+		font-size: 30px;
+		margin-bottom: 50px;
+	}
+}
+
+.partners {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+
+	> div {
+		background-color: $gray2;
+		height: 108px;
+		color: $light-purple;
+		font-weight: 600;
+		font-size: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 280px;
+	}
+}
+
+//fifth section
+.fifth_section {
+	@extend .first_section;
+
+	> span {
+		margin-top: 60px;
+		font-size: 30px;
+		font-weight: 600;
+	}
+
+	> div {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin-top: 50px;
+		border-radius: 4px;
+	}
+}
+
+.started_card {
+	width: 480px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px;
+	margin: 0 20px;
+	border: 1px solid $gray2;
+
+	> span {
+		font-size: 20px;
+		font-weight: 600;
+		margin: 20px 0px;
+	}
+
+	> p {
+		text-align: center;
+		font-size: 16px;
+		height: 100px;
+		margin-bottom: 20px;
+	}
+}
+
+//toggle
+.toggle_text {
+	margin-right: 70px;
+	min-height: 175px;
+	width: 430px;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.raise_funds_toggle_text {
+	//margin-bottom: 30px;
+	min-height: 175px;
+	width: 430px;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.toggle-wrapper {
+	//margin: 0.5em auto;
+	height: 30px;
+	width: 165px;
+	transform: rotate(90deg);
+	border-radius: 15px !important;
+	background-color: $gray2 !important;
+	border-color: $gray2 !important;
+	margin-top: 135px;
+	position: absolute;
+	left: -50px;
+}
+
+.toggle-wrapper label {
+	padding: 0.3em;
+	font-size: 17px;
+	display: block;
+}
+
+.toggleContainer {
+	width: 100%;
+	position: relative;
+	box-shadow: none !important;
+	height: 100%;
+}
+
+.toggleContainer .toggleOption {
+	transform: rotate(-90deg);
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+	font-size: 16px !important;
+	color: $dark-blue;
+}
+
+.toggleContainer .toggleOption.selected {
+	cursor: pointer;
+	transform: rotate(-90deg);
+}
+
+.toggleContainer .toggle {
+	position: absolute;
+	height: 100%;
+	bottom: 0;
+	left: 0;
+	transition: all 0.4s ease-in-out;
+	background-color: $white;
+	border-radius: 15px;
+	border: 1px solid $gray2 !important;
+}
+
+.optionDisabled {
+	background: #e6e6e6;
+	cursor: no-drop !important;
+}
+
+.get_started {
+	@extend .first_section;
+
+	> span {
+		font-size: 30px;
+		font-weight: 600;
+	}
+
+	> div {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin-top: 50px;
+		border-radius: 4px;
+	}
+}

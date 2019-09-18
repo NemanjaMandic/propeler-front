@@ -1,0 +1,39 @@
+.login__title {
+	color: $dark-blue;
+	h1 {
+		font-size: 50px;
+		font-weight: 600;
+		margin: 30px 0;
+	}
+	p {
+		color: $light-purple;
+		margin-bottom: 35px;
+		font-size: 16px;
+		line-height: 21px;
+	}
+}
+
+.login__form {
+	margin: 120px auto 0 auto;
+	text-align: center;
+
+	.login__links {
+		font-size: 14px;
+	}
+}
+
+.form__field {
+	margin-bottom: 20px;
+
+	&--left {
+		margin-bottom: 20px;
+		text-align: left;
+	}
+}
+
+.form__field__inline {
+	display: flex;
+	justify-content: space-between;
+	width: 400px;
+	margin: 0 auto 10px auto;
+}

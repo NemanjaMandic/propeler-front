@@ -1,0 +1,238 @@
+type StateT = {
+	editCampaign: {
+		open: boolean,
+		key: string,
+		inProgress: boolean,
+	},
+	documentPreview: {
+		open: boolean,
+		title?: string,
+		text?: string,
+		signAction?: Function,
+	},
+	confirmModal: {
+		open: boolean,
+		title: string,
+		subtitle: string,
+		actionLabel: string,
+		cancelLabel: string,
+		actionMethod: Function,
+		actionParams: any,
+		buttonClass: any,
+	},
+	documentSigningDialog: {
+		open: boolean,
+		inProgress: boolean,
+		document: Object,
+		signAction?: Function,
+	},
+	investDialog: {
+		open: boolean,
+		inProgress: boolean,
+		availableInvestment: {
+			amount?: number,
+			equity?: number,
+		},
+		campaign: {
+			maxEquityOffered: number,
+			minEquityOffered: number,
+			minInvestment: number,
+			urlFriendlyName: string,
+		},
+	},
+	updatesDialog: {
+		open: boolean,
+		inProgress: boolean,
+		create: boolean,
+		update: {
+			title: any,
+			content: any,
+			id: any,
+		},
+	},
+	updateDocumentDialog: {
+		id: any,
+		accessLevel: string,
+		title: string,
+		type: string,
+		url: string,
+		inProgress: boolean,
+		errors: string,
+		open: boolean,
+		dialogTitle: string,
+		accessLevels: Array<Object>,
+		documentEntity: string,
+	},
+	submitDocumentDialog: {
+		dialogTitle: string,
+		type: string,
+		open: boolean,
+		documentEntity: string,
+		overview: boolean,
+		accessLevels: Array<Object>,
+	},
+	rejectionDialog: {
+		open: boolean,
+		title: string,
+		fieldName: string,
+		actionLabel: string,
+		cancelLabel: string,
+		actionMethod: Function,
+	},
+	fundraisingAppReview: {
+		review: any,
+		viewOnly: boolean,
+		open: boolean,
+	},
+	kycInternalReview: {
+		open: boolean,
+		viewOnly: boolean,
+		review: any,
+		role: string,
+		status: string,
+		page: number,
+	},
+	offPlatformInvestment: {
+		open: boolean,
+		inProgress: boolean,
+		campaignName: string,
+		minInvestment: number,
+	},
+	userPreviewDialog: {
+		open: boolean,
+		loadingPhoto: boolean,
+		user: any,
+	},
+	paymentConfirmationDialog: {
+		open: boolean,
+		paymentId: any,
+		submit: any,
+		submitParams: any,
+	},
+	digitalSignatureSettupDialog: {
+		open: boolean,
+	},
+	snackbar: any,
+	closeCampaignDialog: {
+		open: boolean,
+		campaign: Object,
+	},
+};
+
+const initialState = (): StateT => ({
+	editCampaign: {
+		open: false,
+		key: '',
+		inProgress: false,
+	},
+	documentPreview: {
+		open: false,
+	},
+	confirmModal: {
+		open: false,
+		title: '',
+		subtitle: '',
+		actionLabel: '',
+		cancelLabel: '',
+		actionMethod: null,
+		actionParams: null,
+		buttonClass: null,
+	},
+	documentSigningDialog: {
+		open: false,
+		inProgress: false,
+		document: undefined,
+	},
+	investDialog: {
+		open: false,
+		inProgress: false,
+		availableInvestment: {},
+		campaign: {
+			maxEquityOffered: 0,
+			minEquityOffered: 0,
+			minInvestment: 0,
+			urlFriendlyName: '',
+		},
+	},
+	updatesDialog: {
+		open: false,
+		inProgress: false,
+		create: false,
+		update: {
+			title: null,
+			content: null,
+			id: null,
+		},
+	},
+	updateDocumentDialog: {
+		id: null,
+		accessLevel: '',
+		title: '',
+		type: '',
+		url: '',
+		inProgress: false,
+		errors: '',
+		open: false,
+		dialogTitle: '',
+		documentEntity: '',
+		accessLevels: [],
+	},
+	submitDocumentDialog: {
+		dialogTitle: '',
+		type: '',
+		open: false,
+		documentEntity: '',
+		overview: false,
+		accessLevels: [],
+	},
+	rejectionDialog: {
+		open: false,
+		title: '',
+		fieldName: '',
+		actionLabel: '',
+		cancelLabel: '',
+		actionMethod: null,
+	},
+	fundraisingAppReview: {
+		review: null,
+		viewOnly: false,
+		open: false,
+	},
+	kycInternalReview: {
+		open: false,
+		review: null,
+		viewOnly: false,
+		role: '',
+		status: '',
+		page: 0,
+	},
+	offPlatformInvestment: {
+		open: false,
+		inProgress: false,
+		campaignName: '',
+		minInvestment: 0,
+	},
+	userPreviewDialog: {
+		open: false,
+		loadingPhoto: false,
+		user: null,
+	},
+	paymentConfirmationDialog: {
+		open: false,
+		paymentId: null,
+		submit: null,
+		submitParams: null,
+	},
+	digitalSignatureSettupDialog: {
+		open: false,
+	},
+	snackbar: {
+		// bla: { message: "asfdsgfhdsf", variant: "info"}
+	},
+	closeCampaignDialog: {
+		open: false,
+		campaign: null,
+	},
+});
+
+export default initialState;

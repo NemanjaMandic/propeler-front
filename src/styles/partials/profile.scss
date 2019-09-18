@@ -1,0 +1,120 @@
+.change__profile__form {
+	margin-top: 50px;
+	text-align: left;
+
+	.form__field {
+		margin-bottom: 20px;
+	}
+
+	.auth__links {
+		font-size: 14px;
+		width: 450px;
+	}
+
+	form {
+		padding-top: 20px;
+	}
+
+	@media print {
+		display: none;
+	}
+}
+
+.tax__country__toggle {
+	display: inline-flex;
+	align-items: center;
+	width: 400px;
+	margin-bottom: 10px;
+}
+
+.toggle__text {
+	margin-left: 10px;
+	color: $dark-blue;
+}
+
+.profile__spinner {
+	width: 100%;
+	height: 100%;
+	padding-top: 40%;
+	text-align: center;
+}
+
+.verification {
+	display: flex;
+	flex-direction: column;
+	color: $dark-blue;
+
+	> span {
+		font-weight: 600;
+	}
+
+	> div {
+		display: flex;
+		flex-direction: column;
+
+		> span {
+			margin-top: 20px;
+			white-space: pre-wrap;
+
+			&:nth-child(2) {
+				margin-bottom: 20px;
+			}
+		}
+
+		> div {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 30px;
+		}
+	}
+
+	&_upload {
+		width: 180px !important;
+	}
+
+	&_button {
+		width: 180px;
+		margin-top: 40px;
+		margin-bottom: 300px;
+		.MuiButtonBase-root-119 {
+			height: 50px !important;
+		}
+	}
+}
+
+.upload_photos {
+	display: flex;
+	flex-direction: row !important;
+	> div {
+		margin-right: 20px;
+	}
+
+	&_info {
+		background-color: $light-gray;
+		width: 540px;
+		min-height: 100px;
+		padding: 20px;
+		text-align: left;
+		justify-content: center;
+		white-space: pre-wrap;
+		margin-bottom: 30px;
+	}
+}
+
+.political_info {
+	display: block !important;
+	max-width: 540px;
+	margin-top: 20px;
+
+	> span {
+		&:nth-child(2) {
+			color: $light-blue;
+			cursor: pointer;
+		}
+	}
+	> div {
+		margin-top: 20px;
+		display: flex;
+		flex-direction: row !important;
+	}
+}

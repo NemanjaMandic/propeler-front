@@ -1,0 +1,112 @@
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	color: $dark-blue;
+	padding-top: 40px;
+	width: 100%;
+	margin-bottom: 60px;
+	flex: 0;
+
+	@media print {
+		display: none;
+	}
+
+	&__border {
+		height: 1px;
+		background-color: $light-purple;
+		width: calc(100% - 150px);
+	}
+
+	&__items {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__navs {
+		display: inline-flex;
+		padding: 17px 0 15px 0;
+		.nav {
+			padding: 0 20px 0 20px;
+			cursor: pointer;
+			color: $dark-blue;
+			text-decoration: none;
+			&:hover {
+				color: $light-purple;
+			}
+		}
+	}
+	&__title {
+		font-size: 30px;
+		font-weight: 600;
+		cursor: pointer;
+		width: 150px;
+		flex-shrink: 0;
+		a {
+			color: $dark-blue;
+			text-decoration: none !important;
+		}
+	}
+	&--menu-position {
+		margin-top: 45px;
+	}
+	&__menu {
+		float: right;
+		display: inline-flex;
+		flex-direction: row;
+		align-items: center;
+		&--username {
+			padding: 20px 0 20px 0;
+			font-size: 14px;
+			width: 70px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+		&--avatar {
+			border-radius: 20px;
+			margin-top: 10px;
+			width: 40px;
+			height: 40px;
+			background-color: $light-purple;
+
+			&--icon {
+				width: inherit;
+				height: inherit;
+				border-radius: 20px;
+			}
+		}
+		&--dropdown {
+			padding-top: 5px;
+		}
+	}
+}
+
+.preview_btn {
+	color: $dark-blue !important;
+	border-color: $dark-blue !important;
+}
+
+.content_snack_bar {
+	margin-top: 60px;
+}
+
+.default_snack_bar {
+	width: 830px;
+}
+
+.auth_buttons {
+	height: 100%;
+	display: flex;
+	> button {
+		width: 120px;
+		&:first-child {
+			margin-right: 20px;
+		}
+	}
+}
+
+.reg_company_btn {
+	color: $light-blue !important;
+	border-color: $light-blue !important;
+}

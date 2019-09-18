@@ -1,0 +1,31 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: $text-font-size;
+}
+
+a {
+	color: $light-blue;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.app-container {
+	width: 100%;
+	max-width: 1240px;
+	margin: auto;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+
+	> div {
+		&:nth-child(2) {
+			flex: 1;
+		}
+	}
+}

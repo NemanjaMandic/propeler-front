@@ -1,0 +1,15 @@
+$text-font-size: 14px;
+$text-line-height: $text-font-size * 1.5;
+$input-font-size: 14px;
+$input-line-height: $input-font-size * 1.5;
+$button-font-size: 16px;
+$button-line-height: $button-font-size * 1.5;
+
+:export {
+	textFontSize: $text-font-size;
+	textLineHeight: $text-line-height;
+	inputFontSize: $input-font-size;
+	inputLineHeight: $input-line-height;
+	buttonFontSize: $button-font-size;
+	buttonLineHeight: $button-line-height;
+}

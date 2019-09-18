@@ -1,0 +1,151 @@
+.investor {
+	&-dashboard {
+		&-portfolio {
+			&-table {
+				&-rows {
+					display: flex;
+					width: 100%;
+					height: 40px;
+					border-bottom: 1px solid rgba(208, 209, 218, 1);
+				}
+
+				&-rows-inner {
+					display: flex;
+					width: 100%;
+					height: 65px;
+					border-bottom: 1px solid rgba(208, 209, 218, 1);
+				}
+
+				&-title {
+					color: #9498b8;
+					font-size: 12px;
+					width: 11%;
+					margin-top: auto;
+					margin-bottom: auto;
+					display: flex;
+					align-items: center;
+
+					&:last-child {
+						width: 50px;
+					}
+				}
+
+				&-sub-title {
+					color: #9498b8;
+					width: 13%;
+					font-size: 14px;
+					margin-top: auto;
+					margin-bottom: auto;
+					text-transform: uppercase;
+
+					&-first {
+						padding-left: 20px;
+						color: #9498b8 !important;
+						font-size: 14px;
+						width: 20%;
+						margin-top: auto;
+						margin-bottom: auto;
+						text-transform: uppercase;
+					}
+				}
+
+				&-title-first {
+					color: #9498b8;
+					font-size: 12px;
+					width: 17%;
+					margin-top: auto;
+					margin-bottom: auto;
+					display: flex;
+					align-items: center;
+				}
+
+				&-row {
+					color: #39316c;
+					width: 11%;
+					font-size: 14px !important;
+					margin-top: auto;
+					margin-bottom: auto;
+					margin-left: 0px !important;
+					padding-left: 0px;
+
+					> p {
+						font-size: 14px !important;
+					}
+
+					&.green > span {
+						color: $green;
+					}
+
+					&.red > span {
+						color: $red;
+					}
+
+					&.double {
+						width: 26%;
+					}
+
+					&-first {
+						width: 17%;
+						font-size: 14px;
+						color: #39316c;
+						margin-top: auto;
+						margin-bottom: auto;
+					}
+				}
+
+				&-sub-row-first {
+					padding-left: 20px;
+					font-size: 14px;
+					min-width: 20%;
+					margin-top: auto;
+					margin-bottom: auto;
+				}
+
+				&-gray-txt {
+					color: #9498b8;
+					font-size: 14px;
+					width: 20%;
+					margin-top: auto;
+					margin-bottom: auto;
+					padding-left: 20px;
+					margin-left: 0 !important;
+				}
+			}
+		}
+
+		&-campaigns {
+			&-button {
+				background-color: #e4fbef !important;
+				font-size: 14px !important;
+				font-weight: bold !important;
+				color: #1ccd77 !important;
+				text-transform: none !important;
+				padding-left: 24px !important;
+				padding-right: 24px !important;
+			}
+			&-disabled-button {
+				background-color: $gray5 !important;
+				font-size: 14px !important;
+				font-weight: bold !important;
+				color: white !important;
+				text-transform: none !important;
+				padding-left: 24px !important;
+				padding-right: 24px !important;
+				cursor: not-allowed !important;
+			}
+		}
+
+		&-updates {
+			&-table {
+				&-last-row {
+					text-align: right;
+					color: #acb6bf;
+					font-size: 14px;
+					padding-left: 0px;
+					padding-right: 30px;
+					height: 65px;
+				}
+			}
+		}
+	}
+}

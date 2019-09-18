@@ -1,0 +1,52 @@
+.profile_menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: $dark-blue;
+	padding-top: 10px;
+	width: 100%;
+	flex: none !important;
+
+	&_title {
+		font-weight: 600;
+		font-size: 30px;
+	}
+
+	&_items {
+		margin-top: 30px;
+		display: flex;
+		flex-direction: row;
+
+		.item {
+			color: $dark-blue;
+			font-size: 14px;
+			font-weight: normal;
+			text-decoration: none;
+			padding: 5px 15px;
+			margin-right: 10px;
+
+			&:hover {
+				background-color: $magnolia;
+				border-radius: 4px;
+				transition: 0.3s;
+			}
+
+			&.tab {
+				border-bottom: 2px solid transparent;
+				padding: 5px 43px;
+				&:hover {
+					border-radius: 0;
+				}
+			}
+		}
+	}
+}
+
+.change__password__form {
+	margin-top: 60px;
+	text-align: left;
+
+	.form__field {
+		margin-bottom: 20px;
+	}
+}

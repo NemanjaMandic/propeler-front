@@ -1,0 +1,78 @@
+.register__title {
+	@extend .login__title;
+}
+
+.register__form {
+	margin: 60px auto 0 auto;
+	text-align: center;
+	color: #39316c !important;
+}
+
+.register__investor {
+	display: flex;
+	justify-content: center;
+}
+
+.form__field--row {
+	@extend .form__field;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.form__field--recaptcha {
+	@extend .form__field;
+	display: inline-block;
+	align-self: center;
+	margin: 10px auto 30px auto;
+}
+
+.form__field--country {
+	@extend .form__field;
+	color: $dark-blue;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+
+	.form__field--switch {
+		margin-top: 20px;
+	}
+
+	.form__field--width {
+		width: 400px;
+		flex-direction: row;
+		display: flex;
+	}
+}
+
+.register-success {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	&__title {
+		font-size: 30px;
+		color: $dark-blue;
+		text-align: center;
+		margin-top: 120px;
+		margin-bottom: 30px;
+	}
+	.description {
+		width: 330px;
+		text-align: center;
+		align-self: center;
+	}
+	&__description {
+		color: $dark-blue;
+		margin-bottom: 20px;
+		@extend .description;
+	}
+	&__email {
+		color: $light-purple;
+		margin-bottom: 20px;
+		@extend .description;
+	}
+	&__login {
+		color: $light-purple;
+		@extend .description;
+	}
+}

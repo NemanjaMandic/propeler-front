@@ -1,0 +1,22 @@
+.error__page {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.error__page--title {
+	font-size: 72px;
+	color: $dark-blue;
+}
+
+.error__page--symbol {
+	margin: 20px 0 30px 0;
+	font-size: 62px;
+	color: $light-purple;
+}
+
+.error__page--text {
+	font-size: 14px;
+	color: $dark-blue;
+	max-width: 300px;
+	margin: 0 auto 20px auto;
+}

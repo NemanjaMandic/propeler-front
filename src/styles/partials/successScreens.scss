@@ -1,0 +1,40 @@
+.successScreen {
+	text-align: center;
+	margin: 0 auto;
+
+	h1 {
+		font-weight: 600;
+		font-size: 30px;
+		margin: 35px 0 20px 0;
+		color: $dark-blue;
+	}
+
+	p {
+		color: $dark-blue;
+		font-size: 14px;
+		white-space: pre;
+	}
+}
+
+.successScreenLink {
+	color: $light-blue;
+	cursor: pointer;
+}
+
+.successScreen_content {
+	width: 440px;
+	margin: 40px auto;
+	background-color: #fff7e0;
+	padding: 20px;
+	border-radius: 4px;
+	> div {
+		padding-bottom: 10px;
+		text-align: left;
+		color: $dark-blue;
+	}
+}
+
+.checkbox_label {
+	font-family: 'Open Sans', sans-serif;
+	color: $dark-blue;
+}
